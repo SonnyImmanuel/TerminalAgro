@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">Terminal agro</string>
+    <string name="masuk">Masuk</string>
+    <string name="daftar_sekarang">Daftar sekarang</string>
+    <string name="daftar">Daftar</string>
+    <string name="ubah_profil">Ubah profil</string>
+    <string name="tambah_alamat_baru">Tambah alamat baru</string>
+    <string name="simpan">Simpan</string>
+    <string name="tambah_produk">Tambah produk</string>
+    <string name="ubah">Ubah</string>
+    <string name="hapus">Hapus</string>
+    <string name="keranjang">Keranjang</string>
+    <string name="beli">Beli</string>
+    <string name="kirim_jasa">Kirim Jasa</string>
+    <string name="jemput_sendiri">Jemput sendiri</string>
+    <string name="buat_pesanan">Buat pesanan</string>
+    <string name="konfirmasi_pembayaran">Konfirmasi pembayaran</string>
+    <string name="kirim">Kirim</string>
+    <string name="terima_paket">Terima paket</string>
+    <string name="tulis_review">Tulis review</string>
+    <string name="kirim_review">Kirim review</string>
+    <string name="nama">Nama</string>
+    <string name="password">Password</string>
+    <string name="email">Email</string>
+    <string name="syarat">Dengan menekan tombol Lanjutkan, saya menyutujui
+Syarat dan Ketentuan dan kebijakan privasi Agroterminal</string>
+    <string name="punyaAkun">Sudah punya akun? Masuk</string>
+    <string name="nama_jalan">Nama Jalan</string>
+    <string name="provinsi">Provinsi</string>
+    <string name="kota_kabupaten">Kota/Kabupaten</string>
+    <string name="nama_penerima">Nama penerima</string>
+    <string name="nomor_penerima">Nomor penerima</string>
+    <string name="jenis_kelamin">Jenis kelamin</string>
+    <string name="tanggal_lahir">Tanggal lahir</string>
+    <string name="nomor_telepon">Nomor telepon</string>
+    <string name="kecamtan">Kecamtan</string>
+    <string name="nama_toko">Nama toko</string>
+    <string name="alamat">Alamat</string>
+    <string name="deskripsi">Deskripsi</string>
+
+
+</resources>

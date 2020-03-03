@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfilSaya"
+    android:orientation="vertical"
+    >
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/iv_profil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/image_circle"
+        android:src="@mipmap/ic_launcher_round"
+        tools:layout_editor_absoluteX="144dp"
+        />
+
+    <TextView
+        android:id="@+id/tv_nama"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/nama"
+        android:textColor="@color/colorHitam"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        android:fontFamily="@font/montserrat"
+        android:textSize="@dimen/ukuran_isi"
+        app:layout_constraintTop_toBottomOf="@id/iv_profil"/>
+
+    <EditText
+        android:id="@+id/et_nama"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/kiri"
+        android:layout_marginEnd="@dimen/kanan"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textColor="@color/colorHitam"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_nama"
+        />
+
+    <TextView
+        android:id="@+id/tv_jenisKelamin"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/jenis_kelamin"
+        android:textColor="@color/colorHitam"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        android:fontFamily="@font/montserrat"
+        android:textSize="@dimen/ukuran_isi"
+        app:layout_constraintTop_toBottomOf="@id/et_nama"/>
+
+    <EditText
+        android:id="@+id/et_jenisKelamin"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/kiri"
+        android:layout_marginEnd="@dimen/kanan"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textColor="@color/colorHitam"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_jenisKelamin"
+        />
+
+    <TextView
+        android:id="@+id/tv_tanggalLahir"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/tanggal_lahir"
+        android:textColor="@color/colorHitam"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        android:fontFamily="@font/montserrat"
+        android:textSize="@dimen/ukuran_isi"
+        app:layout_constraintTop_toBottomOf="@id/et_jenisKelamin"/>
+
+    <EditText
+        android:id="@+id/et_tanggalLahir"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/kiri"
+        android:layout_marginEnd="@dimen/kanan"
+        android:ems="10"
+        android:inputType="date"
+        android:textColor="@color/colorHitam"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_tanggalLahir"
+        />
+
+    <TextView
+        android:id="@+id/tv_nomorTelepon"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/nomor_telepon"
+        android:textColor="@color/colorHitam"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        android:fontFamily="@font/montserrat"
+        android:textSize="@dimen/ukuran_isi"
+        app:layout_constraintTop_toBottomOf="@id/et_tanggalLahir"/>
+
+    <EditText
+        android:id="@+id/et_nomorTelepon"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/kiri"
+        android:layout_marginEnd="@dimen/kanan"
+        android:ems="10"
+        android:inputType="number"
+        android:textColor="@color/colorHitam"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_nomorTelepon"
+        />
+
+    <Button
+        android:id="@+id/btn_ubahProfil"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/kiri"
+        android:layout_marginEnd="@dimen/kanan"
+        android:background="@drawable/shape_rectangle_hijau"
+        android:text="@string/ubah_profil"
+        android:textColor="@color/colorPutih"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_nomorTelepon"
+        android:layout_marginBottom="@dimen/margin_bottom"
+        android:layout_marginTop="@dimen/margin_top" />
+
+</android.support.constraint.ConstraintLayout>

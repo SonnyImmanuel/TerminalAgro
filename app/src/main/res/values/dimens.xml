@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="margin_top">20dp</dimen>
+    <dimen name="margin_left">20dp</dimen>
+    <dimen name="ukuran_judul">20sp</dimen>
+    <dimen name="ukuran_isi">16sp</dimen>
+    <dimen name="marginn_right">20dp</dimen>
+    <dimen name="atas_button">50dp</dimen>
+    <dimen name="kiri_button">16dp</dimen>
+    <dimen name="kanan_button">16dp</dimen>
+    <dimen name="margin_add">90dp</dimen>
+    <dimen name="atas_button_2">20dp</dimen>
+    <dimen name="margin_bottom">20dp</dimen>
+    <dimen name="kiri">10dp</dimen>
+    <dimen name="kanan">10dp</dimen>
+</resources>
