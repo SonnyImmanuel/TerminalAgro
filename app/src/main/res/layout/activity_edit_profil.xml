@@ -18,7 +18,9 @@
         android:layout_centerHorizontal="true"
         android:background="@drawable/image_circle"
         android:src="@mipmap/ic_launcher_round"
-        tools:layout_editor_absoluteX="144dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
         android:id="@+id/iv_add"
@@ -58,13 +60,13 @@
         />
 
     <TextView
-        android:id="@+id/tv_jenisKelamin"
+        android:id="@+id/tv_emails"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="32dp"
         android:layout_marginEnd="16dp"
-        android:text="@string/jenis_kelamin"
+        android:text="@string/email"
         android:textColor="@color/colorHitam"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
@@ -74,7 +76,7 @@
         app:layout_constraintTop_toBottomOf="@id/et_nama"/>
 
     <EditText
-        android:id="@+id/et_jenisKelamin"
+        android:id="@+id/et_emails"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/kiri"
@@ -84,27 +86,27 @@
         android:textColor="@color/colorHitam"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_jenisKelamin"
+        app:layout_constraintTop_toBottomOf="@+id/tv_emails"
         />
 
     <TextView
-        android:id="@+id/tv_tanggalLahir"
+        android:id="@+id/tv_usernames"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="32dp"
         android:layout_marginEnd="16dp"
-        android:text="@string/tanggal_lahir"
+        android:text="@string/username"
         android:textColor="@color/colorHitam"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         android:fontFamily="@font/montserrat"
         android:textSize="@dimen/ukuran_isi"
-        app:layout_constraintTop_toBottomOf="@id/et_jenisKelamin"/>
+        app:layout_constraintTop_toBottomOf="@id/et_emails"/>
 
     <EditText
-        android:id="@+id/et_tanggalLahir"
+        android:id="@+id/et_usernames"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/kiri"
@@ -114,7 +116,7 @@
         android:textColor="@color/colorHitam"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_tanggalLahir"
+        app:layout_constraintTop_toBottomOf="@+id/tv_usernames"
         />
 
     <TextView
@@ -131,7 +133,7 @@
         app:layout_constraintStart_toStartOf="parent"
         android:fontFamily="@font/montserrat"
         android:textSize="@dimen/ukuran_isi"
-        app:layout_constraintTop_toBottomOf="@id/et_tanggalLahir"/>
+        app:layout_constraintTop_toBottomOf="@id/et_usernames"/>
 
     <EditText
         android:id="@+id/et_nomorTelepon"

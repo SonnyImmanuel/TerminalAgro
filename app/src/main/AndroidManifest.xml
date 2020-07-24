@@ -2,6 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.terminalagro">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -9,20 +12,29 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".TambahItem"></activity>
-        <activity android:name=".SyaratKetentuan" />
-        <activity android:name=".DaftarToko" />
-        <activity android:name=".EditProfil" />
-        <activity android:name=".Login" />
-        <activity android:name=".ProfilSaya" />
-        <activity android:name=".Splashscreen" />
-        <activity android:name=".AlamatBaru">
+        <activity android:name=".DetailProduk"></activity>
+        <activity android:name=".tambahProduk" />
+        <activity android:name=".DaftarProduk" />
+        <activity android:name=".tambahAlamat" />
+        <activity android:name=".AlamatSaya" />
+        <activity android:name=".Splashscreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".MainActivity" />
+        <activity android:name=".Toko" />
+        <activity android:name=".Login" />
+        <activity android:name=".Daftar" />
+        <activity android:name=".TambahItem" />
+        <activity android:name=".SyaratKetentuan" />
+        <activity android:name=".DaftarToko" />
+        <activity android:name=".EditProfil" />
+        <activity android:name=".ProfilSaya" />
+        <activity android:name=".AlamatBaru" />
+        <activity android:name=".ListProduk" />
 
         <meta-data
             android:name="preloaded_fonts"

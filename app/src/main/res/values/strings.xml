@@ -37,6 +37,18 @@ Syarat dan Ketentuan dan kebijakan privasi Agroterminal</string>
     <string name="nama_toko">Nama toko</string>
     <string name="alamat">Alamat</string>
     <string name="deskripsi">Deskripsi</string>
+    <string name="message_person">Penerima</string>
+    <string name="lastText">Pesan</string>
+    <string name="notification_title">Diskon</string>
+    <string name="notification">Khusus anda mendapatkan diskon 20%</string>
+    <string name="username">Username</string>
+    <string name="buka_toko">Buka Toko</string>
+    <string name="alamatSaya">Alamat Saya</string>
+    <string name="verifikasi">Permintaan anda sedang di verifikasi oleh admin</string>
+    <string name="nama_produk">Nama Produk</string>
+    <string name="harga">Harga</string>
+    <string name="berat_produk">Berat produk (Kg)</string>
+    <string name="jumlah_produk">Jumlah produk</string>
 
 
 </resources>

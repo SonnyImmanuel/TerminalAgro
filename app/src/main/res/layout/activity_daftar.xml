@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
+<ScrollView
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -7,23 +7,29 @@
     android:layout_height="match_parent"
     tools:context=".Daftar">
 
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="20dp">
+
     <TextView
         android:id="@+id/tv_nama"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="32dp"
         android:layout_marginEnd="16dp"
-        android:text="@string/nama"
+        android:fontFamily="@font/montserrat"
+        android:text="@string/username"
         android:textColor="@color/colorHitam"
+        android:layout_marginTop="20dp"
+        android:textSize="@dimen/ukuran_isi"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        android:fontFamily="@font/montserrat"
-        android:textSize="@dimen/ukuran_isi"/>
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/et_nama"
+        android:id="@+id/et_username"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/kiri"
@@ -50,7 +56,7 @@
         app:layout_constraintStart_toStartOf="parent"
         android:fontFamily="@font/montserrat"
         android:textSize="@dimen/ukuran_isi"
-        app:layout_constraintTop_toBottomOf="@id/et_nama"/>
+        app:layout_constraintTop_toBottomOf="@id/et_username"/>
 
     <EditText
         android:id="@+id/et_email"
@@ -96,21 +102,89 @@
         app:layout_constraintTop_toBottomOf="@+id/tv_password"
         />
 
-    <TextView
-        android:id="@+id/tv_syaratKetentuan"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="32dp"
-        android:layout_marginEnd="16dp"
-        android:text="@string/syarat"
-        android:textColor="@color/colorHitam"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        android:fontFamily="@font/montserrat"
-        android:textSize="@dimen/ukuran_isi"
-        app:layout_constraintTop_toBottomOf="@id/et_password"/>
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="16dp"
+            android:text="@string/nama"
+            android:textColor="@color/colorHitam"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            android:fontFamily="@font/montserrat"
+            android:textSize="@dimen/ukuran_isi"
+            app:layout_constraintTop_toBottomOf="@id/et_password"/>
+
+        <EditText
+            android:id="@+id/et_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/kiri"
+            android:layout_marginEnd="@dimen/kanan"
+            android:ems="10"
+            android:textColor="@color/colorHitam"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_name"
+            />
+
+        <TextView
+            android:id="@+id/tv_no"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="16dp"
+            android:text="@string/nomor_telepon"
+            android:textColor="@color/colorHitam"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            android:fontFamily="@font/montserrat"
+            android:textSize="@dimen/ukuran_isi"
+            app:layout_constraintTop_toBottomOf="@id/et_name"/>
+
+        <EditText
+            android:id="@+id/et_no"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/kiri"
+            android:layout_marginEnd="@dimen/kanan"
+            android:ems="10"
+            android:inputType="number"
+            android:textColor="@color/colorHitam"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_no"
+            />
+
+        <CheckBox
+            android:id="@+id/checkBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:layout_marginLeft="10dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/et_no" />
+
+        <TextView
+            android:id="@+id/tv_syaratKetentuan"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="16dp"
+            android:fontFamily="@font/montserrat"
+            android:text="@string/syarat"
+            android:textColor="@color/colorHitam"
+            android:textSize="@dimen/ukuran_isi"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/checkBox"
+            app:layout_constraintTop_toBottomOf="@id/et_no" />
 
     <Button
         android:id="@+id/btn_daftar"
@@ -131,9 +205,9 @@
         android:id="@+id/btn_punyaAkun"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:background="@color/transparant"
         android:layout_marginStart="@dimen/kiri"
         android:layout_marginEnd="@dimen/kanan"
-        android:background=""
         android:text="@string/punyaAkun"
         android:textColor="@color/colorBiru"
         app:layout_constraintEnd_toEndOf="parent"
@@ -142,8 +216,7 @@
         android:layout_marginBottom="@dimen/margin_bottom"
         android:layout_marginTop="50dp"
         android:minHeight="0dp"
-        android:minWidth="0dp"
-        />
+        android:minWidth="0dp"/>
+    </android.support.constraint.ConstraintLayout>
 
-
-</android.support.constraint.ConstraintLayout>
+</ScrollView>

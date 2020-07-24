@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:outlineSpotShadowColor="@color/black"
+    android:outlineAmbientShadowColor="@color/black"
+    app:cardBackgroundColor="#EFEFEF">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="5dp">
+
+        <TextView
+            android:id="@+id/nPenerima"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/nama"
+            android:textColor="@color/black"
+            android:textSize="15dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tPenerima"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/nomor_telepon"
+            android:textColor="@color/black"
+            android:textSize="15dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/nPenerima" />
+
+        <TextView
+            android:id="@+id/aPenerima"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/alamat"
+            android:textColor="@color/black"
+            android:textSize="15dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tPenerima" />
+    </android.support.constraint.ConstraintLayout>
+
+</android.support.v7.widget.CardView>

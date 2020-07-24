@@ -14,4 +14,7 @@
     <color name="colorHitam">#000000</color>
     <color name="iron">#CCCCCC</color>
     <color name="transparant">#00ffffff</color>
+    <color name="black">#000000</color>
+    <color name="bg_gray">#747474</color>
+    <color name="white">#ffffff</color>
 </resources>

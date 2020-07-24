@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginLeft="10dp"
+    tools:context=".DaftarToko">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/iv_produk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:src="@mipmap/ic_launcher_round"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/iv_add"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_btn_upload"
+            app:layout_constraintBottom_toBottomOf="@id/iv_produk"
+            tools:layout_editor_absoluteX="34dp" />
+
+        <EditText
+            android:id="@+id/nama_produk"
+            android:hint="@string/nama_produk"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/iv_produk" />
+
+        <EditText
+            android:id="@+id/harga_produk"
+            android:hint="@string/harga"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/nama_produk" />
+
+        <EditText
+            android:id="@+id/berat_produk"
+            android:hint="@string/berat_produk"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/harga_produk" />
+
+        <EditText
+            android:id="@+id/jumlah_produk"
+            android:hint="@string/jumlah_produk"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/berat_produk" />
+
+        <TextView
+            android:id="@+id/txtDesc"
+            android:text="Deskripsi"
+            android:textColor="@color/black"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/jumlah_produk"
+            tools:layout_editor_absoluteX="16dp" />
+
+        <EditText
+            android:id="@+id/deskripsi_produk"
+            android:hint="@string/deskripsi"
+            android:inputType="text|textMultiLine"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:gravity="top"
+            app:layout_constraintTop_toBottomOf="@+id/txtDesc" />
+
+        <Button
+            android:id="@+id/tambah_produk"
+            android:text="@string/tambah_produk"
+            android:layout_margin="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/circle"
+            app:layout_constraintTop_toBottomOf="@+id/deskripsi_produk" />
+
+    </android.support.constraint.ConstraintLayout>
+</ScrollView>

@@ -14,13 +14,15 @@
 
     <de.hdodenhof.circleimageview.CircleImageView
         android:id="@+id/iv_profil"
+        android:layout_marginTop="10dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:background="@drawable/image_circle"
+        android:background="@drawable/ic_person"
         android:src="@mipmap/ic_launcher_round"
-        tools:layout_editor_absoluteX="144dp"
-        />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/tv_nama"
@@ -38,14 +40,15 @@
         android:textSize="@dimen/ukuran_isi"
         app:layout_constraintTop_toBottomOf="@id/iv_profil"/>
 
-    <EditText
+    <TextView
         android:id="@+id/et_nama"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/kiri"
         android:layout_marginEnd="@dimen/kanan"
         android:ems="10"
-        android:inputType="textPersonName"
+        android:text="@string/nama"
+        android:textSize="18dp"
         android:textColor="@color/colorHitam"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -53,13 +56,13 @@
         />
 
     <TextView
-        android:id="@+id/tv_jenisKelamin"
+        android:id="@+id/tv_username"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="32dp"
         android:layout_marginEnd="16dp"
-        android:text="@string/jenis_kelamin"
+        android:text="@string/username"
         android:textColor="@color/colorHitam"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
@@ -68,48 +71,50 @@
         android:textSize="@dimen/ukuran_isi"
         app:layout_constraintTop_toBottomOf="@id/et_nama"/>
 
-    <EditText
-        android:id="@+id/et_jenisKelamin"
+    <TextView
+        android:id="@+id/e_username"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/kiri"
         android:layout_marginEnd="@dimen/kanan"
         android:ems="10"
-        android:inputType="textPersonName"
+        android:text="@string/jenis_kelamin"
+        android:textSize="18dp"
         android:textColor="@color/colorHitam"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_jenisKelamin"
+        app:layout_constraintTop_toBottomOf="@+id/tv_username"
         />
 
     <TextView
-        android:id="@+id/tv_tanggalLahir"
+        android:id="@+id/tv_email"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="32dp"
         android:layout_marginEnd="16dp"
-        android:text="@string/tanggal_lahir"
+        android:text="@string/email"
         android:textColor="@color/colorHitam"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         android:fontFamily="@font/montserrat"
         android:textSize="@dimen/ukuran_isi"
-        app:layout_constraintTop_toBottomOf="@id/et_jenisKelamin"/>
+        app:layout_constraintTop_toBottomOf="@id/e_username"/>
 
-    <EditText
-        android:id="@+id/et_tanggalLahir"
+    <TextView
+        android:id="@+id/e_email"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/kiri"
         android:layout_marginEnd="@dimen/kanan"
         android:ems="10"
-        android:inputType="date"
+        android:textSize="18dp"
+        android:text="@string/tanggal_lahir"
         android:textColor="@color/colorHitam"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_tanggalLahir"
+        app:layout_constraintTop_toBottomOf="@+id/tv_email"
         />
 
     <TextView
@@ -126,16 +131,17 @@
         app:layout_constraintStart_toStartOf="parent"
         android:fontFamily="@font/montserrat"
         android:textSize="@dimen/ukuran_isi"
-        app:layout_constraintTop_toBottomOf="@id/et_tanggalLahir"/>
+        app:layout_constraintTop_toBottomOf="@id/e_email"/>
 
-    <EditText
+    <TextView
         android:id="@+id/et_nomorTelepon"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/kiri"
         android:layout_marginEnd="@dimen/kanan"
         android:ems="10"
-        android:inputType="number"
+        android:text="@string/nomor_telepon"
+        android:textSize="18dp"
         android:textColor="@color/colorHitam"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
